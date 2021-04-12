@@ -6,21 +6,26 @@ import {
   ImageBackground,
   Dimensions,
   TextInput,
-  Platform
+  Platform,
+  KeyboardAvoidingView,
 } from 'react-native';
 const {height, width} = Dimensions.get('window');
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <ImageBackground
+      <ImageBackground 
         source={require('./src/images/h2.png')}
         style={styles.image}>
         <View style={styles.loginCard}>
           <Text style={styles.loginText}>Login</Text>
-          <View style={styles.textInputWrapper}>
-            <TextInput style={styles.textInput} />
-          </View>
+          <KeyboardAvoidingView style={styles.textInputWrapper}>
+            <TextInput
+              style={styles.textInput}
+              placeholder="Enter your access code"
+              placeholderTextColor='#fff'
+            />
+          </KeyboardAvoidingView>
           <View style={styles.submitButton}>
             <Text style={styles.submitText}> Submit</Text>
           </View>
@@ -70,7 +75,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 10,
     width: 230,
-    marginTop: 50,
+    marginTop: 60,
   },
   submitText: {
     color: '#fff',
