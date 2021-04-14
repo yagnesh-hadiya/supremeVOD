@@ -7,56 +7,67 @@ import {
   Dimensions,
   TextInput,
   Platform,
+  KeyboardAvoidingView,
+  TouchableOpacity,
 } from 'react-native';
 const {height, width} = Dimensions.get('window');
 
-const LoginScreen = () => {
+const LoginScreen = props => {
   return (
-    <View style={styles.container}>
-      <ImageBackground
-        source={require('./src/images/h2.png')}
-        style={styles.image}>
-        <View style={styles.loginCard}>
-          <Text style={styles.loginText}>Login</Text>
-          <View style={styles.textInputWrapper}>
-            <TextInput
-              style={styles.textInput}
-              placeholder="Enter your access code"
-              placeholderTextColor="#fff"
-            />
-          </View>
-          <View style={styles.submitButton}>
-            <Text style={styles.submitText}> Submit</Text>
+    <ImageBackground source={require('../assets/Images/h2.png')} style={styles.image}>
+      <KeyboardAvoidingView behavior={'height'} style={styles.keyboard}>
+        <View style={styles.loginCardContainer}>
+          <View style={styles.loginCard}>
+            <Text style={styles.loginText}>Login</Text>
+            <View style={styles.textInputWrapper}>
+              <TextInput
+                style={styles.textInput}
+                placeholder="Enter your access code"
+                placeholderTextColor="#fff"
+              />
+            </View>
+            <TouchableOpacity
+              onPress={() => props.navigation.navigate('HomeScreen')}>
+              <View style={styles.submitButton}>
+                <Text style={styles.submitText}> Submit</Text>
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
-      </ImageBackground>
-    </View>
+      </KeyboardAvoidingView>
+    </ImageBackground>
   );
 };
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   image: {
     width: width,
     height: height,
-    // opacity: 0.9,
+    opacity: 0.9,
+  },
+  loginCardContainer: {
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    flex: 1,
   },
   loginCard: {
     marginHorizontal: 30,
     backgroundColor: 'rgba( 0, 0, 0,0.9)',
     alignItems: 'center',
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
+    // position: 'absolute',
+    // bottom: 0,
+    // left: 0,
+    // right: 0,
     height: 350,
+    width: 300,
   },
   loginText: {
     color: 'white',
     fontSize: 30,
     fontWeight: 'bold',
     marginVertical: 35,
+  },
+  keyboard: {
+    flex: 1,
   },
   textInputWrapper: {
     backgroundColor: '#6D6D6D',
