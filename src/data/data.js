@@ -1,17 +1,17 @@
 export const Country = [
   {
     id: '1',
-    name: 'Spanish',
+    name: 'spanish',
     image: require('../assets/Images/spanish.png'),
   },
   {
     id: '2',
-    name: 'French',
+    name: 'french',
     image: require('../assets/Images/french.png'),
   },
   {
     id: '3',
-    name: 'English',
+    name: 'english',
     image: require('../assets/Images/english.png'),
   },
 ];

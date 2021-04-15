@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "b77df3dd-32eb-490f-8607-514e68cee2b8",
+		"name": "new api video on demand",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://supreme-tv.info/vod/act.php?login=AZ1737744613254&uid=CC:D3:1E:A6:49:7C&serial=174071809FFFF&model=android",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://supreme-tv.info/vod/act.php?login=AZ1737744613254&uid=CC:D3:1E:A6:49:7C&serial=174071809FFFF&model=android",
+					"protocol": "http",
+					"host": [
+						"supreme-tv",
+						"info"
+					],
+					"path": [
+						"vod",
+						"act.php"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "AZ1737744613254"
+						},
+						{
+							"key": "uid",
+							"value": "CC:D3:1E:A6:49:7C"
+						},
+						{
+							"key": "serial",
+							"value": "174071809FFFF"
+						},
+						{
+							"key": "model",
+							"value": "android"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_series_categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_series_categories",
+					"protocol": "http",
+					"host": [
+						"supreme-tv",
+						"info"
+					],
+					"path": [
+						"player_api.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "password",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "action",
+							"value": "get_series_categories"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_series",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_series",
+					"protocol": "http",
+					"host": [
+						"supreme-tv",
+						"info"
+					],
+					"path": [
+						"player_api.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "password",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "action",
+							"value": "get_series"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_series&category_id=281",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_series&category_id=281",
+					"protocol": "http",
+					"host": [
+						"supreme-tv",
+						"info"
+					],
+					"path": [
+						"player_api.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "password",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "action",
+							"value": "get_series"
+						},
+						{
+							"key": "category_id",
+							"value": "281"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_series_info&series_id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_series_info&series_id=1",
+					"protocol": "http",
+					"host": [
+						"supreme-tv",
+						"info"
+					],
+					"path": [
+						"player_api.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "password",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "action",
+							"value": "get_series_info"
+						},
+						{
+							"key": "series_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_vod_categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_vod_categories",
+					"protocol": "http",
+					"host": [
+						"supreme-tv",
+						"info"
+					],
+					"path": [
+						"player_api.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "password",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "action",
+							"value": "get_vod_categories"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_vod_streams&category_id=119",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_vod_streams&category_id=119",
+					"protocol": "http",
+					"host": [
+						"supreme-tv",
+						"info"
+					],
+					"path": [
+						"player_api.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "password",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "action",
+							"value": "get_vod_streams"
+						},
+						{
+							"key": "category_id",
+							"value": "119"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_vod_info&vod_id=89521",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://supreme-tv.info/player_api.php?username=AZ9865518287248&password=AZ9865518287248&action=get_vod_info&vod_id=89521",
+					"protocol": "http",
+					"host": [
+						"supreme-tv",
+						"info"
+					],
+					"path": [
+						"player_api.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "password",
+							"value": "AZ9865518287248"
+						},
+						{
+							"key": "action",
+							"value": "get_vod_info"
+						},
+						{
+							"key": "vod_id",
+							"value": "89521"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

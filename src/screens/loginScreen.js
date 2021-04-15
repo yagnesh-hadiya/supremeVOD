@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Text,
   View,
+  StatusBar,
   StyleSheet,
   ImageBackground,
   Dimensions,
@@ -14,7 +15,9 @@ const {height, width} = Dimensions.get('window');
 
 const LoginScreen = props => {
   return (
-    <ImageBackground source={require('../assets/Images/h2.png')} style={styles.image}>
+    
+    <ImageBackground source={require('../assets/Images/loginBg.png')} style={styles.image}>
+      {/* <StatusBar translucent={true} backgroundColor= 'transparent'/> */}
       <KeyboardAvoidingView behavior={'height'} style={styles.keyboard}>
         <View style={styles.loginCardContainer}>
           <View style={styles.loginCard}>
@@ -42,7 +45,7 @@ const styles = StyleSheet.create({
   image: {
     width: width,
     height: height,
-    opacity: 0.9,
+    // opacity: 0.9,
   },
   loginCardContainer: {
     justifyContent: 'flex-end',
@@ -51,7 +54,7 @@ const styles = StyleSheet.create({
   },
   loginCard: {
     marginHorizontal: 30,
-    backgroundColor: 'rgba( 0, 0, 0,0.9)',
+    backgroundColor: 'rgba( 0, 0, 0,0.7)',
     alignItems: 'center',
     // position: 'absolute',
     // bottom: 0,
@@ -71,7 +74,7 @@ const styles = StyleSheet.create({
   },
   textInputWrapper: {
     backgroundColor: '#6D6D6D',
-    padding: Platform.OS === 'ios' ? 15 : 0,
+    padding: Platform.OS === 'ios' ? 15 : 5,
     borderRadius: 10,
     width: 230,
     height: 52,
@@ -79,6 +82,7 @@ const styles = StyleSheet.create({
   textInput: {
     color: '#fff',
     fontSize: 18,
+    textDecorationLine:'none',
   },
   submitButton: {
     backgroundColor: '#FF0000',
